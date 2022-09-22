@@ -44,14 +44,14 @@ public class FileReader {
         for (int i = 0; i < ar.length; i++) {
             System.out.println(ar[i]);
             if (ar[i].equals("Name")) {
-                name = ar[i+1];
+                name = ar[i + 1];
                 System.out.println("Here");
             } else if (ar[i].equals("Age")) {
-                age = Integer.parseInt(ar[i+1]);
+                age = Integer.parseInt(ar[i + 1]);
             } else if (ar[i].equals("Email")) {
-                email = ar[i+1];
+                email = ar[i + 1];
             } else if (ar[i].equals("Phone")) {
-                phone = Long.parseLong(ar[i+1]);
+                phone = Long.parseLong(ar[i + 1]);
             }
         }
         //System.out.println(ar);
