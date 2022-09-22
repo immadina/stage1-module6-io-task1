@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
 
 
 public class FileReader {
@@ -28,6 +27,7 @@ public class FileReader {
             }
             fis.close();
 
+        } catch (FileNotFoundException e) {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
