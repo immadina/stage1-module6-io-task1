@@ -42,10 +42,10 @@ public class FileReader {
         String[] ar = st.split(":");
 
         for (int i = 0; i < ar.length; i++) {
-            System.out.println(ar[i]);
+            //System.out.println(ar[i]);
             if (ar[i].equals("Name")) {
                 name = ar[i + 1];
-                System.out.println("Here");
+                //System.out.println("Here");
             } else if (ar[i].equals("Age")) {
                 age = Integer.parseInt(ar[i + 1]);
             } else if (ar[i].equals("Email")) {
