@@ -22,7 +22,6 @@ public class FileReader {
                 sb.append(new String(buffer));
                 buffer = new byte[10];
             }
-            fileInputStream.close();
 
             String st = sb.toString().replace("\n", ":").replace(" ", "");
             String[] ar = st.split(":");
@@ -40,8 +39,6 @@ public class FileReader {
                 }
             }
 
-        } catch (FileNotFoundException e) {
-            System.err.print(e);
         } catch (IOException e) {
             System.err.print(e);
         }
